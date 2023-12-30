@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+    <title>Pricing page</title>
+    <style>
+        
+body {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 100%;
+}
+
+img{
+    width: 80px;
+    margin-right: auto;
+    box-shadow: 2px 2px 10px 5px rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.logo:hover {
+    box-shadow: 2px 2px 10px 5px rgb(0, 0, 0);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    align-items: center;
+    cursor: pointer;
+    height: auto;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 50px;
+    list-style: none;
+    right: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: flex;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+    /* margin: auto 10px; */
+    margin-left: 100px;
+}
+
+.navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(69, 34, 225);
+    font-weight: bolder;
+}
+
+/*mid section*/
+.midsec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.midtext {
+    width: 100%;
+    text-align: center;
+    width: 60%;
+    color: black;
+}
+
+.midtexth2 {
+    font-family: cursive;
+    font-size: 45px;
+}
+
+.midtext p {
+    color: black;
+}
+
+
+/* //selection */
+.currencydiv {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 60px 0px 2px 0px;
+    height: 160px;
+}
+
+.currencydiv button {
+    background-color: white;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.currencydiv button:hover {
+    background-color: rgb(69, 34, 225);
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+
+}
+
+.currencydiv select {
+    background-color: white;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.currencydiv select:hover {
+    background-color: rgb(69, 34, 225);
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+/* pricing section*/
+
+.pricing-section {
+    background: rgb(69, 34, 225);
+}
+
+.pricingdiv {
+    display: flex;
+    margin: auto;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pricing {
+    margin: 10px auto 0px auto;
+    box-shadow: 5px 5px 5px 5px rgb(228, 232, 235);
+    text-align: center;
+    height: auto;
+    width: 20%;
+    justify-content: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pricing:hover {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(69, 34, 225);
+    border: 2px solid white;
+    box-shadow: 2px 2px 10px 5px rgb(0, 0, 0);
+
+}
+
+.pricing:hover {
+    .pricingbtn {
+        background-color: white;
+        color: rgb(69, 34, 225);
+        font-weight: bolder;
+        border-radius: 10px;
+        width: 100px;
+
+    }
+}
+
+.pricingbtn:hover {
+    background-color: white;
+    color: rgb(69, 34, 225);
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 10px;
+}
+
+
+.pricingh2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 8px auto 25px auto;
+
+}
+
+.pricingh1 {
+    margin: 10px 0px 50px 0px;
+}
+
+.pricingp {
+    text-align: start;
+}
+
+.pricing img {
+    height: 30px;
+    border-radius: 10px;
+}
+
+.pricing li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.pricingbtn {
+    background-color: rgb(69, 34, 225);
+    color: white;
+    width: 80px;
+    border: none;
+    height: 30px;
+    margin-top: 50px;
+}
+
+.redtick {
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.greentick {
+    color: rgb(145, 244, 63);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/* contact us */
+.contactsec {
+    border: 2px solid black;
+    height: auto;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+#contacth2 {
+    color: black;
+}
+
+#textarea {
+    background-color: rgb(69, 34, 225);
+    color: #ffff;
+    text-align: center;
+    width: 60%;
+    height: 100px;
+    margin: 2px auto 5px auto;
+    font-size: 18px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.contactsec:hover {
+    color: white;
+    background-color: rgb(69, 34, 225);
+
+    #textarea {
+        background-color: white;
+        color: rgb(69, 34, 225);
+
+    }
+
+    #contacth2 {
+        color: #ffff;
+    }
+
+    button {
+        background-color: white;
+        color: rgb(69, 34, 225);
+    }
+
+    input {
+        background-color: white;
+        color: rgb(69, 34, 225);
+    }
+}
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 10px auto;
+
+}
+
+
+.formdiv input {
+    background-color: rgb(69, 34, 225);
+    color: #ffff;
+    text-align: center;
+    width: 60%;
+    height: 35px;
+    margin: 2px auto 5px auto;
+    font-size: 18px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+.formdiv label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submitbtn {
+    border: 2px solid black;
+    text-align: center;
+    width: 60%;
+    margin: 50px auto 5px auto;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(69, 34, 225);
+
+}
+
+.submitbtn input {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.submitbtn:hover {
+    background-color: white;
+    border: 2px solid black;
+
+    input {
+        background-color: white;
+        color: rgb(69, 34, 225);
+        ;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #565d67;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+    border-top: 0.3px solid rgb(255, 255, 255);
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.9;
+    background-color: rgb(69, 34, 225);
+    margin: 20px 20px;
+    border-radius: 50%;
+}
+
+.socialicon a i {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+}
+
+.socialicon a:hover {
+    background: linear-gradient(white, white);
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.socialicon a:hover i {
+    color: rgb(69, 34, 225);
+    transition: 0.3s;
+}
+
+footer span,
+p {
+    color: white;
+    font-size: large;
+    margin-bottom: 0px;
+}
+
+.bgsec {
+    height: 55vh;
+}
+
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 5px 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    .pricing-section{
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .navbar ul li a {
+        color: rgb(0, 0, 0);
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: auto;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .heightnav {
+        height: 72px;
+    }
+
+    .visibleclass {
+        opacity: 0;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .pricingh1 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .pricingp span {
+        font-size: 14px;
+    }
+
+    .pricing li {
+        font-size: 12px;
+    }
+
+    .pricing {
+        width: 40%;
+    }
+  
+    .socialicon a {
+        margin: 10px 5px;
+        font-size: 5px;
+        padding: 0px;
+    }
+
+    .midtexth2 {
+        font-size: 24px;
+    }
+
+    .contactsec input {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    .currencydiv {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .currencydiv select {
+        font-size: 10px;
+        text-align: center;
+        width: 50%;
+    }
+
+    option {
+        width: 10%;
+
+    }
+
+
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar heightnav">
+        <ul class=" navlist visibleclass" >
+            <div>
+            <img class="logo" src="logo.jpeg" alt="logo of pricing compony"></div>
+            <li> <a href="#home">Home</a></li>
+            <li><a href="#about">About US</a> </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact US</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="midsec">
+        <div class="midtext">
+            <h2 class="midtexth2">Pricing that fits your needs</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat placeat in dolorem consequatur
+                exercitationem delectus iste, accusantium earum expedita vitae, perferendis possimus eveniet tempora
+                tempore ratione repellat. Laudantium, optio.</p>
+        </div>
+    </section>
+    <div class="currencydiv">
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+            <option class="options" value="select">Select currency you want</option>
+            <option value="dollar">&#x24; Dollar</option>
+            <option value="euro">&#x20AC; Euro</option>
+            <option value="yen">&#xa5; Yen</option>
+        </select>
+        <button class="conversion-button">Change currency</button>
+    </div>
+
+    <section class="pricing-section">
+        <h2 class="pricingh2" style="color: white;">Choose your plan</h2>
+        <div class="pricingdiv">
+            <div class="pricing">
+                <h4 class="pricingh4">Free</h4>
+                <h1 class="pricingh1 ruppes">&#8377; <span> 0</span>/month </h1>
+                <p class="pricingp">
+
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="redtick">&#x2715;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="redtick">&#x2715;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="redtick">&#x2715;</span> Lorem ipsum dolor sit.</li>
+                </p>
+                <button class="pricingbtn">Buy</button>
+            </div>
+            <div class="pricing">
+                <h4 class="pricingh4">Basic</h4>
+                <h1 class="pricingh1 ruppes">&#8377;<span id="rs299"> 299</span>/month</h1>
+
+                <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                <li><span class="redtick">&#x2715;</span> Lorem ipsum dolor sit.</li>
+                <li><span class="redtick">&#x2715;</span> Lorem ipsum dolor sit.</li>
+                <p class="pricingp"></p>
+                <button class="pricingbtn">Buy</button>
+            </div>
+            <div class="pricing">
+                <h4 class="pricingh4 ruppes">Standard</h4>
+                <h1 class="pricingh1">&#8377;<span> 599</span>/month</h1>
+                <p class="pricingp">
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="redtick">&#x2715;</span> Lorem ipsum dolor sit.</li>
+                </p>
+                <button class="pricingbtn">Buy</button>
+            </div>
+            <div class="pricing">
+                <h4 class="pricingh4">Premium</h4>
+                <h1 class="pricingh1 ruppes">&#8377;<span> 999</span>/month</h1>
+                <p class="pricingp">
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                    <li><span class="greentick">&#x2713; </span> Lorem ipsum dolor sit.</li>
+                    <li><span class="greentick">&#x2713;</span> Lorem ipsum dolor sit.</li>
+                </p>
+                <button class="pricingbtn">Buy</button>
+            </div>
+        </div>
+    </section>
+    <section class="contactsec">
+        <h2 class="pricingh2" id="contacth2">Contact Us</h2>
+        <form action="" class="contactform">
+            <div class="formdiv">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="formdiv">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="formdiv">
+                <label for="phone">Phone:</label>
+                <input type="number" placeholder="Enter your Phone number (Optional)">
+            </div>
+            <div class="formdiv">
+                <label for="feedback">Feedback</label>
+                <textarea id="textarea" name="suggestion" rows="4" cols="60"
+                    placeholder="feedback/suggestions"></textarea>
+            </div>
+            <div class="formdiv "><button class="submitbtn"><input type="submit"></button></div>
+        </form>
+    </section>
+    <footer class="mainfooter">
+        <div class="footcontainer">
+            <div class="socialicon">
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p>&copy; <span> copywrite </span></p>
+        <p><span id="span1">!!! All right reserved !!!</span></p>
+
+    </footer>
+
+
+
+    <!-- javacript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
