@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form FreelancerHub</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-size: 20px;
+    
+}
+body{
+    background: url(doodle.jpeg) no-repeat no-repeat center center/cover;
+    background-position: center;
+    height: auto;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.form-box{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 40%;
+    height:30%;
+    color: #000000;
+    padding-bottom: 20px;
+    background: rgba(204, 214, 232,0.9) ;
+    padding-top: 0px;
+    text-align: center;
+            box-shadow: 10px 10px 20px 10px #000000;
+    margin:10px 0px;
+    
+}
+.form-box h2{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.inputbox{
+    margin: 8px;
+    background:transparent;
+    color: #000000;
+}
+.inputbox label{
+    justify-content: center;
+}
+.inputbox input{
+    background: transparent;
+    color: #000000;
+    height: 30%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 30px;text-align: center;
+    box-shadow: 10px 10px 20px black;
+}
+.inputbox input:hover{
+    border: 2px solid #ffffff;
+
+}
+button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;width: 300px;
+    margin: 10px 0px;
+    border-radius: 30px;
+    width: 50%;
+    background-color: #1E88E5;
+}
+button:hover{
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    input{
+        color: rgb(255, 255, 255);
+    }
+}
+section{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+button input{
+    background:transparent;
+    color: #ffffff;
+    height: 35%;
+    border: none;
+}
+@media only screen and (max-width:1000px) {
+    .form-box{
+        width: 50%;
+    }.inputbox input{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .form-box{
+        width: 60%;
+    }.inputbox input{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .form-box{
+        width: 80%;
+    }.inputbox input{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:300px) {
+    .form-box{
+        width: 100%;
+    }.inputbox input{
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" id="Registrationform">
+                    <h2>Registration Form</h2>
+                    <div class="inputbox">
+                        <label for="Username">Name:</label><br>
+                        <input type="text" placeholder="Enter your Name" name="Username" required>
+                    </div>
+                    <div  class="inputbox">
+                        <label for="phoneno">Phone-no:</label><br>
+                        <input type="number" placeholder="Enter your phoneno" required>
+                    </div>
+                    <div  class="inputbox">
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="inputbox">
+
+                        <label for="Address">Address</label><br>
+                        <input type="text" placeholder="Enter your Address" required>
+                    </div>
+                    <div class="inputbox">
+
+                        <label for="Age">Age:</label><br>
+                        <input type="number" placeholder="Enter your Age">
+                    </div>
+                    <div class="inputbox">
+                        <label for="Dob">DoB:</label><br>
+                        <input type="date" placeholder="Enter your DoB" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="Name">Password:</label><br>
+                        <input type="text" placeholder="Enter your Password" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="Password2">Confirm Password:</label><br>
+                        <input type="text" placeholder="Confirm your Password" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="suggetion">PortFolio Link :</label><br>
+                        <input type="text" placeholder="portfolio">
+                    </div>
+                    <div>
+
+                        <label for=""><input type="checkbox">I Agree <a href="#">Term & conditions</a></label>
+
+                    </div>
+                    <div>
+
+                        <button id="submitbtn">
+                        <input type="submit" placeholder="Register" >
+                        </button>
+                    </div>
+                    <div class="login"> Already have an Account <a href="login.html">Login</a></div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
