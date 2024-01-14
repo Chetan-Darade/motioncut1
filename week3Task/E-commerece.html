@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>E-commerce</title>
+    <style>
+        body {
+            height: auto;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: rgba(204, 214, 232, 0.9);
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        .sec1{
+            display: block;
+            position: sticky;
+        }
+
+        .nav1 {
+            display: flex;
+            margin: 5px;
+            text-align: center;
+            justify-content: center;
+            position:static;
+        }
+
+        .div1 img {
+            justify-content: start;
+            left: 20px;
+            top: 20px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .div2 ul {
+            display: flex;
+            /* margin-left: 500px; */
+            flex-direction: row;
+        }
+
+        .div2 a:hover {
+            background-color: #000000;
+            color: #ffffff;
+            box-shadow: 2px 2px 2px 2px #1E88E5;
+        }
+
+        .div2 ul li {
+            margin: 20px;
+            list-style: none;
+            margin-top: 50px;
+        }
+
+        .div2 ul li a {
+            text-decoration: none;
+            font-size: 25px;
+            padding: 10% 25%;
+            background-color: #1E88E5;
+            margin: 25px;
+            border: 2px solid black;
+            color: #ffffff;
+            border-radius: 30px;
+            visibility: visible;
+        }
+
+        .div3 {
+            position: absolute;
+            right: 10px;
+            top: 50px;
+        }
+
+        .div3 input {
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .midsec {
+            display: grid;
+            margin: auto;
+            grid-template-columns: 70% 30%;
+        }
+
+        .textdiv {
+            margin: auto;
+            padding: 100px;
+            text-align: center;
+        }
+
+        .mainsec {
+            display: grid;
+            text-align: center;
+            grid-template-columns: 32% 32% 32%;
+            margin: 0px 2%;
+        }
+
+        .productdiv {
+            margin: auto;
+            margin: 5%;
+            min-width: 50%;
+            height: 500px;
+            border: 3px solid black;
+            border-radius: 20px;
+            position: relative;
+            text-align: center;
+            box-shadow: 10px 10px 25px 8px #000000;
+
+            p {
+                padding: 5px;
+            }
+        }
+
+        .productdiv:hover {
+            box-shadow: 15px 15px 10px 8px #000000;
+
+            button {
+                background-color: #000000;
+                font-size: 20px;
+            }
+
+        }
+
+        .productdiv img {
+            height: 200px;
+            margin: 20px auto;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .productdiv button {
+            position: absolute;
+            bottom: 5%;
+            left: 30%;
+            margin: auto;
+            width: 200px;
+            background-color: #1E88E5;
+            color: #ffffff;
+            height: 30px;
+            border-radius: 30px;
+        }
+
+        .formsec {
+            flex-direction: column;
+            height: 80vh;
+            /* font-size: 50px; */
+            border: 2px solid black;
+            display: flex;
+            align-items: center;width: 100%;
+            margin: auto;
+            justify-content: center;
+            input{
+                font-size: 20px;
+                background: rgba(204, 214, 232, 0.9);
+                text-align: center;
+                margin: 20px;
+                width: 80%;
+                
+            }label{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            .contactform{
+                display: flex;
+                align-items: center;
+                background: #1E88E5;
+                text-align: center;
+                border-radius: 20px;
+                justify-content: center;
+                flex-direction: column;
+                border: 2px solid black;
+                width: 50%;
+            }
+        }
+
+        #footer1 {
+            height: 200px;
+            display: flex;
+            background-color: #acb8bf;
+            align-items: center;
+            justify-content: center;margin: auto;
+            border: 2px solid black;
+
+            a {
+                color: #1E88E5;
+                background-color: #ffffff;
+                border-radius: 100%;
+                padding: 10px 10px;
+                font-size: 25px;
+                margin: 10px;
+            }
+        }
+
+        #footer1:hover {
+            a {
+                color: #ffffff;
+                background-color: #1E88E5;
+            }
+        }
+        @media only screen and (max-width: 1800px) {
+        /* Styles for screens up to 1800px*/
+        .mainsec {
+            width: 100%;
+            grid-template-columns: 45% 45%;
+        }
+    }
+    
+    @media only screen and (max-width: 1500px) {
+        /* Styles for screens up to 1500px  */
+        .mainsec {
+            width: 100%;
+            grid-template-columns: 45% 45%;
+        }
+        .div3{
+            position: fixed;
+            right: 0px;
+            top: 50px;
+
+        }
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        /* Styles for screens up to 1000px  */
+        .mainsec {
+            grid-template-columns: 100%;
+            width: 100%;
+        }
+        .div2{
+            font-size: 10px;
+            margin: auto;
+        }
+        .div3{
+            position: fixed;
+            right: 0px;
+            top: 50px;
+            
+        }
+    }
+    .hamburger {
+        display: none;
+        font-size: 25px;
+        cursor: pointer;
+        background: #1E88E5;
+        border: none;
+        color: #ffffff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #1E88E5;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mobile-menu a {
+        display: block;
+        padding: 15px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 500px) {
+        /* Styles for screens up to 500px  */
+        .mainsec {
+            grid-template-columns: 100%;
+            width: 100%;
+        }
+        .div2{
+            font-size: 10px;
+            margin: auto;
+        }
+        .div1{
+                position: fixed;
+                font-size: 0px;
+                height: 10px;
+                width: 10px;
+                top: 0px;
+                visibility: hidden;
+                left: 0px;
+            }
+        .nav1 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .div2 ul {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .div3 {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .midsec {
+            grid-template-columns: 100%;
+            width: 100%;
+        }
+        
+        .textdiv {
+            padding: 50px;
+            width: 100%;
+        }
+        
+        .productdiv {
+            min-width: 100%;
+            width: 100%;
+        }
+        
+        .formsec {
+            height: auto;
+            width: 100%;
+        }.hamburger {
+            display: block;
+            position: fixed;
+            right: 5px;
+            top: 5px;
+        }
+
+        .nav1 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            /* visibility: hidden; */
+        }
+
+        .div2 ul {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .div2 ul.show {
+            display: flex;
+        }
+
+        .div3 {
+            visibility: hidden;
+            width: 100%;
+            text-align: center;
+        }
+
+        .midsec {
+            grid-template-columns: 100%;
+            width: 100%;
+        }
+
+        .textdiv {
+            padding: 50px;
+            width: 100%;
+        }
+
+        .productdiv {
+            min-width: 100%;
+            width: 100%;
+        }
+
+        .formsec {
+            height: auto;
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: block;
+        }
+        .footcontainer{
+            font-size: 10px;
+            margin: 1px;
+            padding: 1px;
+        }
+        .socialicon{
+            font-size: 10px;
+            margin: 1px;
+            padding: 1px;
+
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <section class="sec1">
+        <nav class="nav1">
+            
+            <div class="div1">
+                <img src="logo.jpeg" alt="">
+            </div>
+            <div class="div2">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#footer1">about</a></li>
+                    <li><a href="#mainsec">Products</a></li>
+                    <li><a href="#formsec">contact</a></li>
+                </ul>
+
+                <div class="div3">
+                    <label for="search">&#x1F50D;
+                    </label>
+                    <input type="search">
+                </div>
+            </div>
+            
+        </nav>
+        <button class="hamburger">&#9776;</button>
+    </section>
+
+
+    <section class="midsec" style="margin-top: 100px;">
+        <div class="textdiv">
+            <h1 style="font-size: 50px;">Phone website</h1>
+            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, vitae commodi?
+                Expedita cupiditate odio reiciendis, ipsa obcaecati illo officiis sunt corrupti voluptatum aperiam quia
+                aspernatur ab veritatis et velit saepe!</p>
+        </div>
+        <div class="imgdiv">
+            <img src="onlineshoppingcart.jpeg" alt="" style="height: 500px;border-radius: 40px;margin-right: 20px; border: 2px solid #1E88E5; box-shadow: 8px 8px 10px 10px #000000; ">
+        </div>
+    </section>
+
+
+    <section id="mainsec" class="mainsec">
+        <div class="productdiv">
+            <img src="iphone14.png" alt="">
+            <h2>Apple iPhone 15 </h2>
+            <h3>&#8377;1,27,299 </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, odit.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="productdiv">
+            <img src="S23.png" alt="">
+            <h2>Samsang Galaxy S23 </h2>
+            <h3>&#8377;1,14,999 </h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, odit.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="productdiv">
+            <img src="Samsung-Galaxy-F41.png" alt="">
+            <h2>Samsang Galaxy F41 </h2>
+            <h3>&#8377;14,999 </h3>
+            <p>Lorem ipsum dolor sit amet conzsectetur adipisicing elit. Labore, odit.</p>
+
+            <button>Add to Cart</button>
+        </div>
+        <div class="productdiv">
+            <img src="GalaxyM14(5G).png" alt="">
+            <h2>Samsang Galaxy M14 (5G) </h2>
+            <h3>&#8377;11,999 </h3>
+            <p>Lorem ipsum dolor sit amet conzsectetur adipisicing elit. Labore, odit.</p>
+
+            <button>Add to Cart</button>
+        </div>
+        <div class="productdiv">
+            <img src="RedimeK50i(5G).png" alt="">
+            <h2>RedimeK50i (5G) </h2>
+            <h3>&#8377;21,999 </h3>
+            <p>Lorem ipsum dolor sit amet conzsectetur adipisicing elit. Labore, odit.</p>
+
+            <button>Add to Cart</button>
+        </div>
+        <div class="productdiv">
+            <img src="RedmiNote12.png" alt="">
+            <h2>Redimr note 12 </h2>
+            <h3>&#8377;27,999 </h3>
+
+            <p>Lorem ipsum dolor sit amet conzsectetur adipisicing elit. Labore, odit.</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <section id="formsec" class="formsec">
+        <h1>
+        Contact Us</h1>
+        <form action="#" class="contactform">
+            <div class="field">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="field">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="field">
+                <label for="address">Address</label><br>
+                <input type="text" name="address" placeholder="Enter your address" required>
+            </div>
+            <div class="field">
+                <label for="feedback">Feedback:</label><br>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+        </form>
+    </section>
+    <footer id="footer1" >
+        <div class="footcontainer">
+            <div class="socialicon">
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburger = document.querySelector('.hamburger');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                const navLinks = document.querySelector('.div2 ul');
+        
+                hamburger.addEventListener('click', function () {
+                    navLinks.classList.toggle('show');
+                });
+        
+                window.addEventListener('resize', function () {
+                    if (window.innerWidth > 500) {
+                        navLinks.classList.remove('show');
+                    }
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+        </script>
+</body>
+
+</html>
